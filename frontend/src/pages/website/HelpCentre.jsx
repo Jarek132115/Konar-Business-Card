@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import Navbar from '../../components/Navbar'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import Footer from '../../components/Footer'
-import Background from '../../assets/images/background.png'
+import BackgroundHero from '../../assets/images/background-hero.png'
+
 
 
 export default function HelpCentre() {
@@ -19,7 +20,7 @@ export default function HelpCentre() {
           <h3 className='dekstop-h6 text-center'>Here to help you set up, share, and make the most of your smart card. Browse guides, FAQs, and tips below.</h3>
         </div>
         <div style={{ marginBottom: 100 }} className="blog-container">
-          <img src={Background} alt="Hero" className="" />
+          <img src={BackgroundHero} alt="Hero" className="" />
           <div className="blog-info">
             <div>
               <p className='desktop-h5'>Why NFC Business Cards Are the Future</p>
@@ -30,7 +31,7 @@ export default function HelpCentre() {
           </div>
         </div>
         <div style={{ flexDirection: 'reverse-column' }} className="blog-container">
-          <img src={Background} alt="Hero" className="" />
+          <img src={BackgroundHero} alt="Hero" className="" />
           <div className="blog-info">
             <div>
               <p className='desktop-h5'>Why NFC Business Cards Are the Future</p>

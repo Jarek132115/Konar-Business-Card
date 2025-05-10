@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../../components/Navbar'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import Footer from '../../components/Footer'
-import Background from '../../assets/images/Background.png'
+import Background from '../../assets/images/background.png'
 
 
 export default function HelpCentre() {

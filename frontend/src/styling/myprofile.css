@@ -1,0 +1,43 @@
+.sidebar {
+    height: 100vh;
+    background-color: white;
+    padding: 24px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(55, 55, 55, 0.10);
+}
+
+.my-account-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.sidebar-buttons {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.sidebar-buttons:hover {
+    background-color: #F6F6F6;
+    cursor: pointer;
+    border-radius: 10px;
+    transform: translateY(-1px);
+}
+
+.main-links-container {
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logout-button {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }

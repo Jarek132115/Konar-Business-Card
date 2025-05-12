@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
-import HeroImage from '../../assets/images/Hero-Image.png'
+import HeroImage from '../../assets/images/Hero-Image-new.png'
 import BackgroundHero from '../../assets/images/background-hero.png'
 import Section1Image from '../../assets/images/Section-1-Image.png'
 import TickIcon from '../../assets/icons/Tick-Icon.svg'
@@ -47,12 +47,13 @@ export default function Home() {
     <>
       <Navbar />
 
+      {/* HERO */}
       <div className="home-hero">
         <img src={BackgroundHero} alt="Hero Background" className="hero-image" />
         <div className="hero-container">
           <div className="hero-left">
-            <h1 style={{ width: 500 }} className='desktop-h1'>Look More Professional. Win More Work!</h1>
-            <p style={{ maxWidth: 340 }} className='desktop-h6 hero-subtitle'>Tap your card. Share your profile. Stand out from every other tradie.</p>
+            <h1 className="desktop-h1 hero-heading">Look More Professional. Win More Work!</h1>
+            <p style={{ maxWidth: 340 }} className="desktop-h6 hero-subtitle">Tap your card. Share your profile. Stand out from every other tradie.</p>
             <div className="hero-cta">
               <Link to="/login" className="black-button desktop-button">Get Started Free</Link>
               <Link to="/howitworks" className="blue-button desktop-button">See How It Works</Link>
@@ -83,6 +84,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* HERO */}
+
 
       {/* SECTION 1 */}
       <div className="section">
@@ -136,6 +139,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* SECTION 1 */}
+
 
 
       {/* SECTION 2 */}
@@ -200,8 +205,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* SECTION 2 */}
 
 
+
+
+      {/* SECTION 3 */}
       <div className="section">
         <div className="section-1-title">
           <h2 className="desktop-h3 text-center">Why Tradesmen Love Using This</h2>
@@ -263,92 +272,63 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-
       {/* SECTION 3 */}
+
+
+
+
+
+      {/* SECTION 4 */}
       <div className="section">
         <div className="section-1-title">
           <h2 className='desktop-h3 text-center'>One Profile. Shared in Seconds.</h2>
           <h3 className='desktop-h6 text-center'>Tap it. Scan it. Link it. Your trade page goes anywhere</h3>
         </div>
-
-        <div className="section-3-container">
-          <div className="section-3-1x1-image-info">
-            <img src={Section3_Image1} className="" />
-            <p className='desktop-h5 text-center'>NFC Business Card</p>
-            <p className='desktop-body text-center'>Tap to share your details fast</p>
+        <div className="section-3-container-flex">
+          <div className="section-3-container">
+            <div className="section-3-1x1-image-info">
+              <img src={Section3_Image1} className="" />
+              <p className='desktop-h5 text-center'>NFC Business Card</p>
+              <p className='desktop-body text-center'>Tap to share your details fast</p>
+            </div>
+            <div className="section-3-1x1-image-info">
+              <img src={Section3_Image2} className="" />
+              <p className='desktop-h5 text-center'>Apple & Google Wallet</p>
+              <p className='desktop-body text-center'>Save your card on your phone</p>
+            </div>
           </div>
+          <div className="section-3-container">
+            <div className="section-3-1x1-image-info">
+              <img src={Section3_Image3} className="" />
+              <p className='desktop-h5 text-center'>QR Code</p>
+              <p className='desktop-body text-center'>Scan to open your full profile</p>
+            </div>
 
-          <div className="section-3-1x1-image-info">
-            <img src={Section3_Image2} className="" />
-            <p className='desktop-h5 text-center'>Apple & Google Wallet</p>
-            <p className='desktop-body text-center'>Save your card on your phone</p>
-          </div>
-
-          <div className="section-3-1x1-image-info">
-            <img src={Section3_Image3} className="" />
-            <p className='desktop-h5 text-center'>QR Code</p>
-            <p className='desktop-body text-center'>Scan to open your full profile</p>
-          </div>
-
-          <div className="section-3-1x1-image-info">
-            <img src={Section3_Image4} className="" />
-            <p className='desktop-h5 text-center'>Link in Bio</p>
-            <p className='desktop-body text-center'>One link for everything you offer</p>
+            <div className="section-3-1x1-image-info">
+              <img src={Section3_Image4} className="" />
+              <p className='desktop-h5 text-center'>Link in Bio</p>
+              <p className='desktop-body text-center'>One link for everything you offer</p>
+            </div>
           </div>
         </div>
       </div>
-
-
       {/* SECTION 4 */}
-      <div className="section">
-        <p className='desktop-h3 text-center'>Our Packages</p>
-        <p className='desktop-h6 text-center'>Share your profile in the way that works best for you</p>
+
+
+
+
+      {/* SECTION 5 */}
+      <div className="section-subscription">
+        <p className='desktop-h3 text-center'>Our Plan</p>
+        <p className='desktop-h6 text-center'>Start free for 7 days — only upgrade if it works for you.</p>
 
         <div className="subscription-container">
           <div className="subscription-div">
             <div className="subscription-title">
-              <p className='desktop-h5'>Essentials Card</p>
-              <p className='desktop-body-s'>Get started and get noticed</p>
-            </div>
-            <div className="subscription-info">
-              <div className="hero-tick-container-down">
-                <div className="hero-tick">
-                  <img src={TickIcon} className="icon" />
-                  <p>Add a big photo banner at the top of your page</p>
-                </div>
-                <div className="hero-tick">
-                  <img src={TickIcon} className="icon" />
-                  <p>Write your own main heading and short message</p>
-                </div>
-                <div className="hero-tick">
-                  <img src={TickIcon} className="icon" />
-                  <p>Show your name, job title, and profile photo</p>
-                </div>
-                <div className="hero-tick">
-                  <img src={TickIcon} className="icon" />
-                  <p>Upload a photo of your best work</p>
-                </div>
-                <div className="hero-tick">
-                  <img src={TickIcon} className="icon" />
-                  <p>Add a review from a happy customer</p>
-                </div>
-              </div>
-              <div className="subscription-price">
-                <p className='desktop-body-xs' style={{ fontStyle: 'italic', marginTop: 20 }}>"Perfect for individuals starting to build their professional network."</p>
-                <div className='subscription-price-tag'>
-                  <p style={{ fontSize: 18, fontWeight: 600 }}>Free</p>
-                  <p className='light-black' style={{ fontSize: 12 }}>Forever</p>
-                </div>
-                <Link to="/login" className="black-button desktop-button">Get Started Free</Link>
-              </div>
-            </div>
-          </div>
-          <div className="subscription-div">
-            <div className="subscription-title">
               <p className='desktop-h5'>Power Profile</p>
-              <p className='desktop-body-s'>Win more work with a power profile</p>
+              <p className='desktop-body-s'>Everything you need to look pro and win more work</p>
             </div>
+
             <div className="subscription-info">
               <div className="hero-tick-container-down">
                 <div className="hero-tick">
@@ -388,20 +368,27 @@ export default function Home() {
                   <p>Add your social media links</p>
                 </div>
               </div>
+
               <div className="subscription-price">
-                <p className='desktop-body-xs' style={{ fontStyle: 'italic', marginTop: 20 }}>"For professionals that are ready to make every first impression count."</p>
+                <p className='desktop-body-xs' style={{ fontStyle: 'italic' }}>
+                  Start free. Cancel anytime during your 7-day trial.
+                </p>
                 <div className='subscription-price-tag'>
                   <p style={{ fontSize: 18, fontWeight: 600 }}>£7.95</p>
-                  <p className='light-black' style={{ fontSize: 12 }}>Per Month</p>
+                  <p className='light-black' style={{ fontSize: 12 }}>Per Month (after trial)</p>
                 </div>
-                <Link to="/login" className="black-button desktop-button">Upgrade to Power Profile</Link>
+                <Link to="/login" className="black-button desktop-button">Start 7-Day Free Trial</Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       {/* SECTION 5 */}
+
+
+
+
+      {/* SECTION 6 */}
       <div className="section">
         <div className="section-1-title">
           <h2 className='desktop-h3 text-center'>Make Your Profile Work Harder with a Card</h2>
@@ -410,31 +397,29 @@ export default function Home() {
         <div className="section-3-container">
           <div className="section-3-1x1-image-info">
             <img src={PlasticCard} className="" />
-            <div className="grey-box desktop-body-xs">3-month subscription included</div>
+            <div className="grey-box desktop-body-xs">1-month subscription included</div>
             <p className='desktop-h5 text-center'>Plastic NFC Card</p>
             <p className='desktop-body text-center'>Lightweight, Durable, Always Ready</p>
-            <p style={{ fontSize: 18, fontWeight: 600, textAlign: 'center', marginTop: 10, marginBottom: 5 }}>£29.95</p>
+            <p style={{ fontSize: 18, fontWeight: 600, textAlign: 'center', marginTop: 10, marginBottom: 5 }}>£24.95</p>
             <Link to="/shopnfccards/plasticnfccard" style={{ display: 'flex', width: 'fit-content', margin: 'auto' }} className="black-button desktop-button margin-top-10">Buy Now</Link>
           </div>
           <div className="section-3-1x1-image-info">
             <img src={WoodenCard} className="" />
-            <div className="grey-box desktop-body-xs">3-month subscription included</div>
+            <div className="grey-box desktop-body-xs">1-month subscription included</div>
             <p className='desktop-h5 text-center'>Bamboo NFC Card</p>
             <p className='desktop-body text-center'>Nature Meets Innovation</p>
-            <p style={{ fontSize: 18, fontWeight: 600, textAlign: 'center', marginTop: 10, marginBottom: 5 }}>£39.95</p>
+            <p style={{ fontSize: 18, fontWeight: 600, textAlign: 'center', marginTop: 10, marginBottom: 5 }}>£29.95</p>
             <Link to="//shopnfccards/woodennfccard" style={{ display: 'flex', width: 'fit-content', margin: 'auto' }} className="black-button desktop-button margin-top-10">Buy Now</Link>
-          </div>
-          <div className="section-3-1x1-image-info">
-            <img src={MetalCard} className="" />
-            <div className="grey-box desktop-body-xs">3-month subscription included</div>
-            <p className='desktop-h5 text-center'>Carbon NFC Card</p>
-            <p className='desktop-body text-center'>Bold. Sleek. Unforgettable</p>
-            <p style={{ fontSize: 18, fontWeight: 600, textAlign: 'center', marginTop: 10, marginBottom: 5 }}>£49.95</p>
-            <Link to="/shopnfccards/metalnfccard" style={{ display: 'flex', width: 'fit-content', margin: 'auto' }} className="black-button desktop-button margin-top-10">Buy Now</Link>
           </div>
         </div>
       </div>
+      {/* SECTION 6 */}
 
+
+
+
+
+      {/* SECTION 7 */}
       <div className="section">
         <div className="section-1-title">
           <h2 className="desktop-h3 text-center">Tradesmen Use It. Clients Love It.</h2>
@@ -463,66 +448,88 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* SECTION 7 */}
 
 
 
 
-      {/* SECTION 6 */}
+
+      {/* SECTION 8 */}
       <div className="section">
         <div className="section-1-title">
           <h2 className='desktop-h3 text-center'>The #1 Tool Tradies Are Talking About</h2>
-          <h3 className='desktop-h6 text-center'>Don’t take our word for it — see why tradespeople are switching to smarter, faster profiles.</h3>
+          <h3 className='desktop-h6 text-center'>
+            Don’t take our word for it — see why tradespeople are switching to smarter, faster profiles.
+          </h3>
         </div>
+
         <div className="review-container">
-          <div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
+          <div className="review-pair">
+            <div className="review-div">
+              <img className='stars' src={ReviewStars} />
+              <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+              <div className="review-div-person">
+                <img src={ReviewPerson} />
+                <div className="review-person-name">
+                  <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                  <p className='desktop-body-s'>Mark B</p>
+                </div>
               </div>
             </div>
-          </div><div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
+
+            <div className="review-div">
+              <img className='stars' src={ReviewStars} />
+              <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+              <div className="review-div-person">
+                <img src={ReviewPerson} />
+                <div className="review-person-name">
+                  <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                  <p className='desktop-body-s'>Mark B</p>
+                </div>
               </div>
             </div>
-          </div><div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
+          </div>
+
+          <div className="review-pair">
+            <div className="review-div">
+              <img className='stars' src={ReviewStars} />
+              <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+              <div className="review-div-person">
+                <img src={ReviewPerson} />
+                <div className="review-person-name">
+                  <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                  <p className='desktop-body-s'>Mark B</p>
+                </div>
               </div>
             </div>
-          </div><div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
+
+            <div className="review-div">
+              <img className='stars' src={ReviewStars} />
+              <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+              <div className="review-div-person">
+                <img src={ReviewPerson} />
+                <div className="review-person-name">
+                  <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                  <p className='desktop-body-s'>Mark B</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className='cta-center-text' style={{ marginTop: 60, display: 'flex', justifyContent: 'center' }}>
-          <p className='desktop-h6'>Want more social proof?</p>
-          <Link to="/faw" className="black-button desktop-button">Reviews</Link>
+
+        <div className='cta-center-text review-cta'>
+          <p className='desktop-h6'>Check out more reviews</p>
+          <Link to="/reviews" className="black-button desktop-button">Reviews</Link>
         </div>
       </div>
+      {/* SECTION 8 */}
 
-      {/* SECTION 7 */}
+
+
+
+
+
+      {/* SECTION 9 */}
       <div className="section">
         <div className="section-1-title">
           <h2 className='desktop-h3 text-center'>Frequently Asked Questions</h2>
@@ -536,7 +543,7 @@ export default function Home() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>What is a Konar digital profile?</p>
-                <p className='desktop-body-xs'>It’s your own landing page showing your trade, services, photos, and contact details — all online.</p>
+                <p className='desktop-body-s'>It’s your own landing page showing your trade, services, photos, and contact details — all online.</p>
               </div>
             </div>
             <div className="section-list">
@@ -545,7 +552,7 @@ export default function Home() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>Do I need an NFC card to use it?</p>
-                <p className='desktop-body-xs'>No. You can use and share your digital profile without ever buying a physical card.</p>
+                <p className='desktop-body-s'>No. You can use and share your digital profile without ever buying a physical card.</p>
               </div>
             </div>
             <div className="section-list">
@@ -554,7 +561,7 @@ export default function Home() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>How do people view my profile?</p>
-                <p className='desktop-body-xs'>Share via link, QR code, or NFC tap — works instantly on most phones.</p>
+                <p className='desktop-body-s'>Share via link, QR code, or NFC tap — works instantly on most phones.</p>
               </div>
             </div>
             <div className="section-list">
@@ -563,7 +570,7 @@ export default function Home() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>How do I set up my page?</p>
-                <p className='desktop-body-xs'>Just fill in your trade, upload photos, list services — done in under five minutes.</p>
+                <p className='desktop-body-s'>Just fill in your trade, upload photos, list services — done in under five minutes.</p>
               </div>
             </div>
             <div className="section-list">
@@ -572,7 +579,7 @@ export default function Home() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>Can I update my page anytime?</p>
-                <p className='desktop-body-xs'>Yes. Log in from any device to update info, images, services, or pricing instantly.</p>
+                <p className='desktop-body-s'>Yes. Log in from any device to update info, images, services, or pricing instantly.</p>
               </div>
             </div>
           </div>
@@ -583,7 +590,7 @@ export default function Home() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>What does it cost to use?</p>
-                <p className='desktop-body-xs'>We offer a free plan. Premium features unlock with our £5.95/month Power Profile subscription.</p>
+                <p className='desktop-body-s'>We offer a free plan. Premium features unlock with our £5.95/month Power Profile subscription.</p>
               </div>
             </div>
             <div className="section-list">
@@ -592,7 +599,7 @@ export default function Home() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>What happens if I lose my NFC card?</p>
-                <p className='desktop-body-xs'>Your page still works without the card. You can always reorder one if you want to keep tapping.</p>
+                <p className='desktop-body-s'>Your page still works without the card. You can always reorder one if you want to keep tapping.</p>
               </div>
             </div>
             <div className="section-list">
@@ -601,7 +608,7 @@ export default function Home() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>Who is this for exactly?</p>
-                <p className='desktop-body-xs'>Any tradesperson who wants to get noticed, win more work, and look professional online.</p>
+                <p className='desktop-body-s'>Any tradesperson who wants to get noticed, win more work, and look professional online.</p>
               </div>
             </div>
             <div className="section-list">
@@ -610,7 +617,7 @@ export default function Home() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>Can I customise the design and layout?</p>
-                <p className='desktop-body-xs'>Yes. Pick fonts, colours, and layouts to match your brand and make it yours.</p>
+                <p className='desktop-body-s'>Yes. Pick fonts, colours, and layouts to match your brand and make it yours.</p>
               </div>
             </div>
             <div className="section-list">
@@ -619,16 +626,20 @@ export default function Home() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>Is my personal data safe on here?</p>
-                <p className='desktop-body-xs'>Absolutely. You control everything shown, and your data is hosted securely at all times.</p>
+                <p className='desktop-body-s'>Absolutely. You control everything shown, and your data is hosted securely at all times.</p>
               </div>
             </div>
           </div>
         </div>
-        <div className='cta-center-text' style={{ marginTop: 20, display: 'flex', justifyContent: 'center' }}>
+        <div className="faq-cta">
           <p className='desktop-h6'>Got more questions?</p>
           <Link to="/faq" className="black-button desktop-button">Frequently Asked Questions</Link>
         </div>
+
       </div>
+      {/* SECTION 9 */}
+
+
       <Footer />
     </>
   )

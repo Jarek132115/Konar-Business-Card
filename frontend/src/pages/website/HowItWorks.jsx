@@ -104,40 +104,42 @@ export default function HowItWorks() {
                 <div className="how-it-works-container">
                     <div className="white-card-column">
                         <div className="how-it-works-info">
-                            <img src={BoltIcon} className="icon-40" />
+                            <img src={TapIcon} className="icon-40" />
                             <p className="desktop-h5">Build Your Page</p>
                             <p className="desktop-body">
                                 Add your name, photos, services, and prices — no tech stuff needed.
                             </p>
                         </div>
-                        <img src={BoltIcon} className="white-card-column-image" />
+                        <img src={HowItWorks1} className="white-card-column-image" />
                     </div>
 
                     <div className="how-it-works-right">
                         <div className="white-card">
                             <div className="how-it-works-info">
-                                <img src={BoltIcon} className="icon-40" />
+                                <img src={ProfileIcon} className="icon-40" />
                                 <p className="desktop-h5">Share It Instantly</p>
                                 <p className="desktop-body">
                                     Tap, scan, or send a link. Your full page opens in seconds.
                                 </p>
                             </div>
-                            <img src={BoltIcon} className="how-it-works-right-image" />
+                            <img src={HowItWorks2} className="how-it-works-right-image" />
                         </div>
 
                         <div className="white-card">
                             <div className="how-it-works-info">
-                                <img src={BoltIcon} className="icon-40" />
+                                <img src={SaveIcon} className="icon-40" />
                                 <p className="desktop-h5">Win More Work</p>
                                 <p className="desktop-body">
                                     Look pro, earn trust, and get booked faster with real reviews and a clean profile.
                                 </p>
                             </div>
-                            <img src={BoltIcon} className="how-it-works-right-image" />
+                            <img src={HowItWorks3} className="how-it-works-right-image" />
                         </div>
                     </div>
                 </div>
             </div>
+
+
 
 
 
@@ -147,37 +149,39 @@ export default function HowItWorks() {
                     <h3 className="desktop-h6 text-center">Show off your business with one tap.</h3>
                 </div>
 
-                <div className="section-3-container">
-                    <div className="section-3-1x1-image-info">
-                        <img src={QRCode} className="" />
-                        <p className="desktop-h5 text-center">Your Info, Together</p>
-                        <p className="desktop-body text-center">Services, reviews, prices — all easy to see.</p>
+                <div className="section-3-container-flex">
+                    <div className="section-3-container">
+                        <div className="section-3-1x1-image-info">
+                            <img src={QRCode} className="" />
+                            <p className="desktop-h5 text-center">Your Info, Together</p>
+                            <p className="desktop-body text-center">Services, reviews, prices — all easy to see.</p>
+                        </div>
+                        <div className="section-3-1x1-image-info">
+                            <img src={QRCode} className="" />
+                            <p className="desktop-h5 text-center">Look Like a Pro</p>
+                            <p className="desktop-body text-center">Your page makes you look sharp and trusted.</p>
+                        </div>
                     </div>
-
-                    <div className="section-3-1x1-image-info">
-                        <img src={QRCode} className="" />
-                        <p className="desktop-h5 text-center">Look Like a Pro</p>
-                        <p className="desktop-body text-center">Your page makes you look sharp and trusted.</p>
-                    </div>
-
-                    <div className="section-3-1x1-image-info">
-                        <img src={QRCode} className="" />
-                        <p className="desktop-h5 text-center">Build Trust Fast</p>
-                        <p className="desktop-body text-center">Show real reviews from happy customers.</p>
-                    </div>
-
-                    <div className="section-3-1x1-image-info">
-                        <img src={QRCode} className="" />
-                        <p className="desktop-h5 text-center">Easy to Update</p>
-                        <p className="desktop-body text-center">Change prices or services any time.</p>
+                    <div className="section-3-container">
+                        <div className="section-3-1x1-image-info">
+                            <img src={QRCode} className="" />
+                            <p className="desktop-h5 text-center">Build Trust Fast</p>
+                            <p className="desktop-body text-center">Show real reviews from happy customers.</p>
+                        </div>
+                        <div className="section-3-1x1-image-info">
+                            <img src={QRCode} className="" />
+                            <p className="desktop-h5 text-center">Easy to Update</p>
+                            <p className="desktop-body text-center">Change prices or services any time.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div className="cta-center-text" style={{ marginTop: 60, display: 'flex', justifyContent: 'center' }}>
+                <div className="cta-center-text">
                     <p className="desktop-h6">Takes 5 minutes. No tech stuff needed.</p>
                     <Link to="/shopnfccards" className="black-button desktop-button">Get Started</Link>
                 </div>
             </div>
+
 
             <Footer />
         </>

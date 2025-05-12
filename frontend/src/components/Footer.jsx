@@ -33,7 +33,6 @@ export default function Footer() {
                         <div className="footer-column">
                             <p className='footer-link'>Help</p>
                             <Link to="/contactus" ><p style={{ color: '#333', marginBottom: 5 }} className='desktop-body-s footer-page-link'>Contact Us</p></Link>
-                            <Link to="/helpcentre" ><p style={{ color: '#333', marginBottom: 5 }} className='desktop-body-s footer-page-link'>Help Center</p></Link>
                             <Link to="/faq" ><p style={{ color: '#333', marginBottom: 5 }} className='desktop-body-s footer-page-link'>FAQs</p></Link>
                             <Link to="/policies" ><p style={{ color: '#333', marginBottom: 5 }} className='desktop-body-s footer-page-link'>Shipping & Returns</p></Link>
                             <Link to="/policies" ><p style={{ color: '#333', marginBottom: 5 }} className='desktop-body-s footer-page-link'>Warranty</p></Link>

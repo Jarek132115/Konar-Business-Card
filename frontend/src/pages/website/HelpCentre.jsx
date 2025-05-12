@@ -17,7 +17,7 @@ export default function HelpCentre() {
       <div style={{ marginTop: 40 }} className="section">
         <div className="section-1-title">
           <h2 className='desktop-h1 text-center'>Welcome to the NFC Help Centre</h2>
-          <h3 className='dekstop-h6 text-center'>Here to help you set up, share, and make the most of your smart card. Browse guides, FAQs, and tips below.</h3>
+          <h3 className='desktop-h6 text-center'>Here to help you set up, share, and make the most of your smart card. Browse guides, FAQs, and tips below.</h3>
         </div>
         <div style={{ marginBottom: 100 }} className="blog-container">
           <img src={BackgroundHero} alt="Hero" className="" />

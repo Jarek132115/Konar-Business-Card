@@ -1,69 +1,80 @@
-html, body {
+html,
+body {
   font-family: 'Inter', sans-serif;
   background-color: #FAFAFA;
 }
 
-/* Desktop Typography */
+.cta-center-text {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Typography Base – Desktop (default) */
 .desktop-h1 {
   font-size: 64px;
   font-weight: bold;
-  line-height: 72px; /* 1.125x */
+  line-height: 72px;
   letter-spacing: -1px;
 }
 
 .desktop-h2 {
   font-size: 44px;
   font-weight: bold;
-  line-height: 52px; /* 1.18x */
+  line-height: 52px;
   letter-spacing: -0.5px;
 }
 
 .desktop-h3 {
   font-size: 36px;
   font-weight: 600;
-  line-height: 44px; /* 1.22x */
+  line-height: 44px;
   letter-spacing: -0.25px;
 }
 
 .desktop-h4 {
   font-size: 28px;
   font-weight: 600;
-  line-height: 36px; /* 1.28x */
+  line-height: 36px;
   letter-spacing: 0;
 }
 
 .desktop-h5 {
   font-size: 22px;
   font-weight: 600;
-  line-height: 30px; /* 1.36x */
+  line-height: 30px;
   letter-spacing: 0;
 }
 
 .desktop-h6 {
   font-size: 18px;
   font-weight: 600;
-  line-height: 26px; /* 1.44x */
+  line-height: 26px;
   letter-spacing: 0;
 }
 
 .desktop-body {
   font-size: 16px;
   font-weight: 400;
-  line-height: 26px; /* 1.625x */
+  line-height: 26px;
   letter-spacing: 0;
 }
 
 .desktop-body-s {
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px; /* 1.57x */
+  line-height: 22px;
   letter-spacing: 0.25px;
 }
 
 .desktop-body-xs {
   font-size: 12px;
   font-weight: 400;
-  line-height: 18px; /* 1.5x */
+  line-height: 18px;
   letter-spacing: 0.4px;
 }
 
@@ -74,155 +85,111 @@ html, body {
   letter-spacing: 0;
 }
 
-
-/* Tablet Typography */
-.tablet-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 56px;
-  letter-spacing: -1px;
-}
-
-.tablet-h2 {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 44px;
-  letter-spacing: -0.5px;
-}
-
-.tablet-h3 {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: -0.25px;
-}
-
-.tablet-h4 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 32px;
-  letter-spacing: 0;
-}
-
-.tablet-h5 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 0;
-}
-
-.tablet-h6 {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0;
-}
-
-.tablet-body {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
-}
-
-.tablet-body-s {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.25px;
-}
-
-.tablet-body-xs {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.4px;
-}
-
-.tablet-button {
-  font-size: 15px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0;
-}
-
-
-/* Mobile Typography */
-.mobile-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 44px;
-  letter-spacing: -1px;
-}
-
-.mobile-h2 {
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 36px;
-  letter-spacing: -0.5px;
-}
-
-.mobile-h3 {
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: -0.25px;
-}
-
-.mobile-h4 {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 26px;
-  letter-spacing: 0;
-}
-
-.mobile-h5 {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0;
-}
-
-.mobile-h6 {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: 0;
-}
-
-.mobile-body {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0;
-}
-
-.mobile-body-s {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.25px;
-}
-
-.mobile-body-xs {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.4px;
-}
-
-.mobile-button {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0;
-}
-
 .text-center {
   text-align: center;
 }
 
+@media (max-width: 1000px) {
+  .desktop-h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
 
+  .desktop-h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .desktop-h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .desktop-h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .desktop-h5 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .desktop-h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .desktop-body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .desktop-body-s {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .desktop-body-xs {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .desktop-button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .desktop-h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .desktop-h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .desktop-h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .desktop-h4 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .desktop-h5 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .desktop-h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .desktop-body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .desktop-body-s {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .desktop-body-xs {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .desktop-button {
+    font-size: 14px;
+  }
+}
 
 /* Colours */
 .white {
@@ -244,4 +211,51 @@ html, body {
 .blue {
   color: #0081FF;
 }
+
 /* Colours */
+
+
+
+/* BREADCRUMBS */
+.breadcrumb-nav {
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-link {
+  color: #0081FF;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  color: #333;
+  font-weight: 500;
+}
+
+.section-breadcrumbs {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .section-breadcrumbs {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-breadcrumbs {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

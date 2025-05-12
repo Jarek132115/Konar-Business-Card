@@ -83,162 +83,131 @@ export default function WoodenCard() {
               <span className="qty-display">1</span>
               <button className="qty-btn">+</button>
             </div>
-            <Link to="/login" style={{ display: 'flex', width: 'fit-content', margin: 'auto' }} className="blue-button desktop-button margin-top-10">Buy Now</Link>
+            <Link to="/login" style={{ display: 'flex', width: 'fit-content', margin: 'auto' }} className="black-button desktop-button margin-top-10">Buy Now</Link>
           </div>
         </div>
       </div>
+
+
+
 
       <div className="section">
         <div className="section-1-title">
           <h2 className='desktop-h3 text-center'>The #1 Tool Tradies Are Talking About</h2>
-          <h3 className='desktop-h6 text-center'>Don’t take our word for it — see why thousands of tradespeople are switching to smarter, faster profiles.</h3>
+          <h3 className='desktop-h6 text-center'>
+            Don’t take our word for it — see why tradespeople are switching to smarter, faster profiles.
+          </h3>
         </div>
-        <div className="review-container">
-          <div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
+        <div className="review-container-box">
+          <div className="review-container">
+            <div className="review-pair">
+              <div className="review-div">
+                <img className='stars' src={ReviewStars} />
+                <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+                <div className="review-div-person">
+                  <img src={ReviewPerson} />
+                  <div className="review-person-name">
+                    <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                    <p className='desktop-body-s'>Mark B</p>
+                  </div>
+                </div>
+              </div>
+              <div className="review-div">
+                <img className='stars' src={ReviewStars} />
+                <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+                <div className="review-div-person">
+                  <img src={ReviewPerson} />
+                  <div className="review-person-name">
+                    <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                    <p className='desktop-body-s'>Mark B</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div><div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
+            <div className="review-pair">
+              <div className="review-div">
+                <img className='stars' src={ReviewStars} />
+                <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+                <div className="review-div-person">
+                  <img src={ReviewPerson} />
+                  <div className="review-person-name">
+                    <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                    <p className='desktop-body-s'>Mark B</p>
+                  </div>
+                </div>
+              </div>
+              <div className="review-div">
+                <img className='stars' src={ReviewStars} />
+                <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+                <div className="review-div-person">
+                  <img src={ReviewPerson} />
+                  <div className="review-person-name">
+                    <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                    <p className='desktop-body-s'>Mark B</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div><div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
+          </div>
+          <div className="review-container">
+            <div className="review-pair">
+              <div className="review-div">
+                <img className='stars' src={ReviewStars} />
+                <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+                <div className="review-div-person">
+                  <img src={ReviewPerson} />
+                  <div className="review-person-name">
+                    <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                    <p className='desktop-body-s'>Mark B</p>
+                  </div>
+                </div>
+              </div>
+              <div className="review-div">
+                <img className='stars' src={ReviewStars} />
+                <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+                <div className="review-div-person">
+                  <img src={ReviewPerson} />
+                  <div className="review-person-name">
+                    <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                    <p className='desktop-body-s'>Mark B</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div><div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
+            <div className="review-pair">
+              <div className="review-div">
+                <img className='stars' src={ReviewStars} />
+                <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+                <div className="review-div-person">
+                  <img src={ReviewPerson} />
+                  <div className="review-person-name">
+                    <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                    <p className='desktop-body-s'>Mark B</p>
+                  </div>
+                </div>
+              </div>
+              <div className="review-div">
+                <img className='stars' src={ReviewStars} />
+                <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
+                <div className="review-div-person">
+                  <img src={ReviewPerson} />
+                  <div className="review-person-name">
+                    <p className='desktop-body-xs' style={{ color: '#333' }}>Plumber</p>
+                    <p className='desktop-body-s'>Mark B</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div style={{ marginTop: 20 }} className="review-container">
-          <div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
-              </div>
-            </div>
-          </div><div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
-              </div>
-            </div>
-          </div><div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
-              </div>
-            </div>
-          </div><div className="review-div">
-            <img className='stars' src={ReviewStars} />
-            <p className='desktop-body-s text-center'>“Since using this, I’m actually getting replies. Clients say it’s slick and they’ve even referred me to others.”</p>
-            <div className="review-div-person">
-              <img src={ReviewPerson} />
-              <div className="review-person-name">
-                <p style={{ color: '#333' }} className='desktop-body-xs'>Plumber</p>
-                <p className='desktop-body-s'>Mark B</p>
-              </div>
-            </div>
-          </div>
+        <div className='cta-center-text review-cta'>
+          <p className='desktop-h6'>Check out more reviews</p>
+          <Link to="/reviews" className="black-button desktop-button">Reviews</Link>
         </div>
       </div>
 
-      <div className="section">
-        <div className="section-1-title">
-          <h2 className="desktop-h3 text-center">Smart. Simple. Built to Last.</h2>
-          <h3 className="desktop-h6 text-center">This card does more than just share your details — here's why more tradies are switching.</h3>
-        </div>
 
-        <div className="section-1-content">
-          <div className="section-1-left">
-            <img src={SideCardPlastic} className="" />
-          </div>
 
-          <div className="section-2-2">
-            <div className="section-2-box">
-              <div className="section-list-column">
-                <div className="icon-white-fit">
-                  <img src={BoltIcon} className="icon" />
-                </div>
-                <div className="section-list-info">
-                  <p className="desktop-h6">No More Paper Waste</p>
-                  <p className="desktop-body-xs">One card. Share it again and again.</p>
-                </div>
-              </div>
-
-              <div className="section-list-column">
-                <div className="icon-white-fit">
-                  <img src={BoltIcon} className="icon" />
-                </div>
-                <div className="section-list-info">
-                  <p className="desktop-h6">Look More Professional</p>
-                  <p className="desktop-body-xs">Branded, clean, and always updated.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="section-2-box">
-              <div className="section-list-column">
-                <div className="icon-white-fit">
-                  <img src={BoltIcon} className="icon" />
-                </div>
-                <div className="section-list-info">
-                  <p className="desktop-h6">Update Anytime</p>
-                  <p className="desktop-body-xs">Change your details whenever you need — no reprints.</p>
-                </div>
-              </div>
-
-              <div className="section-list-column">
-                <div className="icon-white-fit">
-                  <img src={BoltIcon} className="icon" />
-                </div>
-                <div className="section-list-info">
-                  <p className="desktop-h6">Your Last Card Ever</p>
-                  <p className="desktop-body-xs">Buy it once. Use it for life.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className="section">
         <div className="section-1-title">
@@ -286,35 +255,37 @@ export default function WoodenCard() {
         </div>
       </div>
 
+
       <div className="section">
         <div className="section-1-title">
           <h2 className='desktop-h3 text-center'>One Profile. Shared in Seconds.</h2>
           <h3 className='desktop-h6 text-center'>Tap it. Scan it. Link it. Your trade page goes anywhere</h3>
         </div>
-
-        <div className="section-3-container">
-          <div className="section-3-1x1-image-info">
-            <img src={Section3_Image1} className="" />
-            <p className='desktop-h5 text-center'>NFC Business Card</p>
-            <p className='desktop-body text-center'>Tap to share your details fast</p>
+        <div className="section-3-container-flex">
+          <div className="section-3-container">
+            <div className="section-3-1x1-image-info">
+              <img src={Section3_Image1} className="" />
+              <p className='desktop-h5 text-center'>NFC Business Card</p>
+              <p className='desktop-body text-center'>Tap to share your details fast</p>
+            </div>
+            <div className="section-3-1x1-image-info">
+              <img src={Section3_Image2} className="" />
+              <p className='desktop-h5 text-center'>Apple & Google Wallet</p>
+              <p className='desktop-body text-center'>Save your card on your phone</p>
+            </div>
           </div>
+          <div className="section-3-container">
+            <div className="section-3-1x1-image-info">
+              <img src={Section3_Image3} className="" />
+              <p className='desktop-h5 text-center'>QR Code</p>
+              <p className='desktop-body text-center'>Scan to open your full profile</p>
+            </div>
 
-          <div className="section-3-1x1-image-info">
-            <img src={Section3_Image2} className="" />
-            <p className='desktop-h5 text-center'>Apple & Google Wallet</p>
-            <p className='desktop-body text-center'>Save your card on your phone</p>
-          </div>
-
-          <div className="section-3-1x1-image-info">
-            <img src={Section3_Image3} className="" />
-            <p className='desktop-h5 text-center'>QR Code</p>
-            <p className='desktop-body text-center'>Scan to open your full profile</p>
-          </div>
-
-          <div className="section-3-1x1-image-info">
-            <img src={Section3_Image4} className="" />
-            <p className='desktop-h5 text-center'>Link in Bio</p>
-            <p className='desktop-body text-center'>One link for everything you offer</p>
+            <div className="section-3-1x1-image-info">
+              <img src={Section3_Image4} className="" />
+              <p className='desktop-h5 text-center'>Link in Bio</p>
+              <p className='desktop-body text-center'>One link for everything you offer</p>
+            </div>
           </div>
         </div>
       </div>
@@ -332,7 +303,7 @@ export default function WoodenCard() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>What is an NFC business card?</p>
-                <p className='desktop-body-xs'>An NFC card lets you instantly share your contact information or social profiles by simply tapping a smartphone.</p>
+                <p className='desktop-body-s'>An NFC card lets you instantly share your contact information or social profiles by simply tapping a smartphone.</p>
               </div>
             </div>
             <div className="section-list">
@@ -341,7 +312,7 @@ export default function WoodenCard() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>How does the NFC card work?</p>
-                <p className='desktop-body-xs'>It uses NFC technology to instantly open your digital profile when tapped on a compatible phone.</p>
+                <p className='desktop-body-s'>It uses NFC technology to instantly open your digital profile when tapped on a compatible phone.</p>
               </div>
             </div>
             <div className="section-list">
@@ -350,7 +321,7 @@ export default function WoodenCard() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>What materials are available for the cards?</p>
-                <p className='desktop-body-xs'>You can choose between Plastic, Wood, and Metal — each built for durability and style.</p>
+                <p className='desktop-body-s'>You can choose between Plastic, Wood, and Metal — each built for durability and style.</p>
               </div>
             </div>
             <div className="section-list">
@@ -359,7 +330,7 @@ export default function WoodenCard() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>Can I customize the design of my card?</p>
-                <p className='desktop-body-xs'>Yes, you can upload your logo, choose colors, and personalize the look during setup.</p>
+                <p className='desktop-body-s'>Yes, you can upload your logo, choose colors, and personalize the look during setup.</p>
               </div>
             </div>
             <div className="section-list">
@@ -368,7 +339,7 @@ export default function WoodenCard() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>Can I update my profile after ordering?</p>
-                <p className='desktop-body-xs'>Absolutely! You can update your profile at any time without reprinting the card.</p>
+                <p className='desktop-body-s'>Absolutely! You can update your profile at any time without reprinting the card.</p>
               </div>
             </div>
           </div>
@@ -379,7 +350,7 @@ export default function WoodenCard() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>How long does an NFC card last?</p>
-                <p className='desktop-body-xs'>With normal use, NFC cards can last for years without losing functionality.</p>
+                <p className='desktop-body-s'>With normal use, NFC cards can last for years without losing functionality.</p>
               </div>
             </div>
             <div className="section-list">
@@ -388,7 +359,7 @@ export default function WoodenCard() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>Does the card work with all smartphones?</p>
-                <p className='desktop-body-xs'>Works with most phones: iPhone 7+ and most Androids with NFC enabled.</p>
+                <p className='desktop-body-s'>Works with most phones: iPhone 7+ and most Androids with NFC enabled.</p>
               </div>
             </div>
             <div className="section-list">
@@ -397,7 +368,7 @@ export default function WoodenCard() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>What if someone can't tap the card?</p>
-                <p className='desktop-body-xs'>Every card includes a scannable QR code so your profile is always easy to access.</p>
+                <p className='desktop-body-s'>Every card includes a scannable QR code so your profile is always easy to access.</p>
               </div>
             </div>
             <div className="section-list">
@@ -406,7 +377,7 @@ export default function WoodenCard() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>Is the NFC chip visible?</p>
-                <p className='desktop-body-xs'>No, the NFC chip is securely hidden inside the design and doesn’t affect how it looks.</p>
+                <p className='desktop-body-s'>No, the NFC chip is securely hidden inside the design and doesn’t affect how it looks.</p>
               </div>
             </div>
             <div className="section-list">
@@ -415,7 +386,7 @@ export default function WoodenCard() {
               </div>
               <div className="section-list-info">
                 <p className='desktop-h6'>Are the cards durable for daily use?</p>
-                <p className='desktop-body-xs'>Yes, our cards are waterproof, scratch-resistant, and built to withstand frequent use over time.</p>
+                <p className='desktop-body-s'>Yes, our cards are waterproof, scratch-resistant, and built to withstand frequent use over time.</p>
               </div>
             </div>
           </div>

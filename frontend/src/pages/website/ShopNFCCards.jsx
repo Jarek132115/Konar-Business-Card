@@ -22,10 +22,10 @@ export default function
     return (
         <>
             <Navbar />
-            <div style={{ marginTop: 20 }} className="section-breadcrumbs">
+            <div className="section-breadcrumbs">
                 <Breadcrumbs />
             </div>
-            <div style={{ marginTop: 60 }} className="section">
+            <div className="section">
                 <div className="section-1-title">
                     <h2 className='desktop-h1 text-center'>Choose Your Perfect Card</h2>
                     <h3 className='desktop-h6 text-center'>Premium materials. Custom designs. Instantly share your contact details with a single tap.</h3>
@@ -33,27 +33,19 @@ export default function
                 <div className="section-3-container">
                     <div className="section-3-1x1-image-info">
                         <img src={PlasticCard} className="" />
-                        <div className="grey-box desktop-body-xs">3-month subscription included</div>
+                        <div className="grey-box desktop-body-xs">1-month subscription included</div>
                         <p className='desktop-h5 text-center'>Plastic NFC Card</p>
                         <p className='desktop-body text-center'>Lightweight, Durable, Always Ready</p>
-                        <p style={{ fontSize: 18, fontWeight: 600, textAlign: 'center', marginTop: 10, marginBottom: 5 }}>£29.95</p>
+                        <p style={{ fontSize: 18, fontWeight: 600, textAlign: 'center', marginTop: 10, marginBottom: 5 }}>£24.95</p>
                         <Link to="/shopnfccards/plasticnfccard" style={{ display: 'flex', width: 'fit-content', margin: 'auto' }} className="black-button desktop-button margin-top-10">Buy Now</Link>
                     </div>
                     <div className="section-3-1x1-image-info">
                         <img src={WoodenCard} className="" />
-                        <div className="grey-box desktop-body-xs">3-month subscription included</div>
+                        <div className="grey-box desktop-body-xs">1-month subscription included</div>
                         <p className='desktop-h5 text-center'>Bamboo NFC Card</p>
                         <p className='desktop-body text-center'>Nature Meets Innovation</p>
-                        <p style={{ fontSize: 18, fontWeight: 600, textAlign: 'center', marginTop: 10, marginBottom: 5 }}>£39.95</p>
+                        <p style={{ fontSize: 18, fontWeight: 600, textAlign: 'center', marginTop: 10, marginBottom: 5 }}>£29.95</p>
                         <Link to="/shopnfccards/woodennfccard" style={{ display: 'flex', width: 'fit-content', margin: 'auto' }} className="black-button desktop-button margin-top-10">Buy Now</Link>
-                    </div>
-                    <div className="section-3-1x1-image-info">
-                        <img src={MetalCard} className="" />
-                        <div className="grey-box desktop-body-xs">3-month subscription included</div>
-                        <p className='desktop-h5 text-center'>Carbon NFC Card</p>
-                        <p className='desktop-body text-center'>Bold. Sleek. Unforgettable</p>
-                        <p style={{ fontSize: 18, fontWeight: 600, textAlign: 'center', marginTop: 10, marginBottom: 5 }}>£49.95</p>
-                        <Link to="/shopnfccards/metalnfccard" style={{ display: 'flex', width: 'fit-content', margin: 'auto' }} className="black-button desktop-button margin-top-10">Buy Now</Link>
                     </div>
                 </div>
             </div>
@@ -61,7 +53,7 @@ export default function
             <div className="section">
                 <div className="section-1-title">
                     <h2 className='desktop-h3 text-center'>Your Work. Your Card. Built to Impress.</h2>
-                    <h3 className='dekstop-h6 text-center'>Choose a smart, tough card that shows off your trade and makes sharing easy.</h3>
+                    <h3 className='desktop-h6 text-center'>Choose a smart, tough card that shows off your trade and makes sharing easy.</h3>
                 </div>
                 <div style={{ gap: 40 }} className="section-1-content">
                     <div className="section-1-left">

@@ -1,10 +1,10 @@
+/* Main Layout */
 .section-flex {
     display: flex;
     width: 1040px;
     align-items: flex-start;
     gap: 40px;
-    margin: auto;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 .section-policy {
@@ -21,12 +21,13 @@
     align-self: stretch;
 }
 
-.policy-box {
+.policy-box,
+.contact-box {
     display: flex;
     flex-direction: column;
     align-items: start;
     background-color: white;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.10);
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -41,17 +42,6 @@
     position: sticky;
     top: 100px;
     bottom: 40px;
-}
-
-.contact-box {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    background-color: white;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
 }
 
 .policy-nav {
@@ -93,4 +83,79 @@
     width: 10px;
     margin-right: 10px;
     margin-left: 5px;
+}
+
+/* ============ Responsive ============ */
+
+@media (max-width: 1200px) {
+    .section-flex {
+        max-width: 900px;
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .section-policy {
+        max-width: 900px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section-flex {
+        flex-direction: column;
+        width: 80%;
+        gap: 30px;
+        margin: 40px auto;
+    }
+
+    .policy-sidebar {
+        max-width: 100%;
+        flex: none;
+    }
+
+    .policy-sticky-box {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .policy-box,
+    .contact-box {
+        flex: 1 1 45%;
+        margin-bottom: 0;
+    }
+
+    .contact-box {
+        height: fit-content;
+    }
+
+    .policy-content {
+        width: 100%;
+        flex: none;
+    }
+
+    .section-policy {
+        margin: auto;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .policy-sticky-box {
+        flex-direction: column;
+    }
+
+    .policy-box,
+    .contact-box {
+        width: 100%;
+        flex: none;
+    }
+
+    .section-flex {
+        padding: 0 20px;
+    }
 }

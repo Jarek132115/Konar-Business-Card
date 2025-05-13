@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Router } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import { UserContextProvider } from '../context/userContext'
 import Home from './pages/website/Home'

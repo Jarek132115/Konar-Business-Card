@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-// Custom names for each route path
 const breadcrumbLabels = {
   '/shopnfccards': 'Shop NFC Cards',
   '/shopnfccards/plasticnfccard': 'Plastic NFC Card',
@@ -21,7 +20,6 @@ export default function Breadcrumbs() {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter(Boolean);
 
-  // Don't render on homepage
   if (pathnames.length === 0) return null;
 
   return (
